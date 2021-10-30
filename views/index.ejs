@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Investing Site</title>
+        <link rel="stylesheet" href="../src/css/index.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src = "../src/scripts/index.js"></script>
+
+    </head>
+
+    <body>
+        <header id="header"> 
+            <div class="navbar" id="longitudinal-navbar">
+                <ul id="account-details">
+                    <li id="btn-log-in">
+                        <a href = '/login'>
+                            Login
+                        </a>
+                    </li>
+                    <li id="account">
+                        <pre><span>Valoare cont</span>
+<span>0</span></pre>
+                    </li>
+                    <li id="profit">
+                        <pre><span>Profit</span>
+<span>0</span></pre>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="menu">
+            <ul id="main-menu">
+                <li id="menu-nav"><img id="menu-icon" src="../src/images/menu-48.png" onclick="toggleMenu()"></li>
+                <li id="index-nav">indici</li>
+                <li id="stock-nav">actiuni</li>
+                <li id="crypto-nav">crypto</li>
+            </ul>
+        </div>
+        
+
+        <div class="table-container" role="table" aria-label="Destinations">
+            <div class="flex-table header" role="rowgroup">
+                <div class="flex-row" role="columnheader">Instrument</div>
+                <div class="flex-row" role="columnheader">Change</div>
+                <div class="flex-row" role="columnheader">Price</div>
+                <div class="flex-row" role="columnheader"></div>
+                <div class="flex-row" role="columnheader"></div>
+                <div class="flex-row" role="columnheader"></div>
+            </div>
+
+            <div class="flex-table row" role="rowgroup">
+                <div class="flex-row" role="cell">Alphabet</div>
+                <div class="flex-row" role="cell">1%</div>
+                <div class="flex-row" role="cell">100$</div>
+                <div class="flex-row" role="cell"><button class="action-btn">Buy</button></div>
+                <div class="flex-row" role="cell"><button class="action-btn">Sell</button></div>
+                <div class="flex-row" role="cell"><button class="action-btn">Watchlist</button></div>
+            </div>
+
+            <div class="flex-table row" role="rowgroup">
+                <div class="flex-row" role="cell">Alphabet</div>
+                <div class="flex-row" role="cell">1%</div>
+                <div class="flex-row" role="cell">100$</div>
+                <div class="flex-row" role="cell"><button class="action-btn">Buy</button></div>
+                <div class="flex-row" role="cell"><button class="action-btn">Sell</button></div>
+                <div class="flex-row" role="cell"><button class="action-btn">Watchlist</button></div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>

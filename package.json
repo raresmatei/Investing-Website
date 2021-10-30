@@ -1,0 +1,32 @@
+{
+  "name": "proiect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "jsx": "^0.9.89",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.7.1",
+    "react": "^17.0.2",
+    "react-plotly": "^1.0.0",
+    "server": "^1.0.36"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.14"
+  }
+}

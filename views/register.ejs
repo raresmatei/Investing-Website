@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<!--===============================================================================================-->
+	<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel="stylesheet" type="text/css"/>
+
+	<link rel="stylesheet" href='../src/css/css_login_register/css/main.css' />
+	<link rel="stylesheet" href='../src/css/css_login_register/css/util.css'/>
+	<link rel="stylesheet" href='../src/css/css_login_register/vendor/bootstrap/css/bootstrap.min.css'/>
+	<link rel="stylesheet" href='../src/css/css_login_register/fonts/font-awesome-4.7.0/css/font-awesome.min.css'/>
+	<link rel="stylesheet" href='../src/css/css_login_register/vendor/animate/animate.css'/>
+	<link rel="stylesheet" href='../src/css/css_login_register/vendor/animate/animate.css'/>
+	<link rel="stylesheet" href='../src/css/css_login_register/vendor/css-hamburgers/hamburgers.min.css'/>
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-register100">
+			<div class="wrap-register100">
+
+				<form class="register100-form validate-form" method="POST">
+					<span class="register100-form-title">
+						Member Register
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "name is required: Rares">
+						<input 
+                            class="input100" 
+                            type="text" 
+                            name="first_name"
+                            id="first-name-register" 
+                            placeholder="First Name"
+                            required
+                        >
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "name is required: Rares">
+						<input 
+                            class="input100" 
+                            type="text" 
+                            name="last_name" 
+                            id="last-name-register"
+                            placeholder="Last Name"
+                            required
+                        >
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "card no is required: 1234 1234 1234 1245">
+						<input 
+                            class="input100" 
+                            type="text" 
+                            name="card_number"
+                            id="card-number-register" 
+                            placeholder="Card number"
+                            required
+                        >
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "card cvv is required: 123">
+						<input 
+                            class="input100" 
+                            type="text" 
+                            name="cvv"
+                            id="cvv-register" 
+                            placeholder="CVV"
+                        >
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input 
+                            class="input100" 
+                            type="text" 
+                            name="email" 
+                            placeholder="Email"
+                            required
+                        >
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input 
+                            class="input100" 
+                            type="password" 
+                            name="pass"
+                            id="pass-register" 
+                            placeholder="Password"
+                            required
+                        >
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Confirm Password is required">
+						<input 
+                            class="input100" 
+                            type="password" 
+                            name="confirm_pass"
+                            id="confirm-pass-register" 
+                            placeholder="Confirm password"
+                            required
+                        >
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="container-register100-form-btn">
+						<input 
+                            class="register100-form-btn"
+                            type="submit"
+                            value="Register"
+                        >
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+        
+	</div>
+
+    <ul>
+        <% if(typeof errors != 'undefined'){ %>
+            <% errors.forEach(error=>{ %>
+                <li><%= error.message %></li>
+           <%}) %>
+        <%} %>
+    <ul>
+
+</body>
+</html>
